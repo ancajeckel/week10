@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Grid Component</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+  <h2>Grid Component</h2>
+  <div class="table-responsive">          
+  <table class="table table-bordered table-hover">
+    <thead>
+      <tr class="active">
+        <th colspan="6">Drag a column header and drop it here to group by that column</th>
+      </tr>
+      <tr class="active">
+        <th class="col-sm-1">ProductID</th>
+        <th class="col-sm-4">Product name</th>
+        <th class="col-sm-2">Unit price</th>
+        <th class="col-sm-2">Quantity per unit</th>
+        <th class="col-sm-2">Units in stock</th>
+        <th class="col-sm-1">Discontinued</th>
+      </tr>
+      <tr class="active">
+        <th><input class="form-control" id="productid" type="text" placeholder=""></th>
+        <th><input class="form-control" id="productname" type="text" placeholder=""></th>
+        <th>
+          <div class="input-group">
+            <input class="form-control" id="unitprice" type="text" placeholder="">
+            <span class="input-group-btn" style="width:0;">
+              <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-filter"></span></button>
+            </span>
+          </div>
+        </th>
+        <th><input class="form-control" id="quantityperunit" type="text" placeholder=""></th>
+        <th>
+          <div class="input-group">
+            <input class="form-control" id="unitsinstock" type="text" placeholder="">
+            <span class="input-group-btn" style="width:0;">
+              <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-filter"></span></button>
+            </span>
+          </div>
+        </th>
+        <th>
+          <div class="input-group">
+            <input type="checkbox">
+            <span class="input-group-btn" style="width:1;">
+              <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-filter"></span></button>
+            </span>
+          </div>
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1</td>
+        <td>Chai</td>
+        <td>$18.00</td>
+        <td>10 boxes x 20 bags</td>
+        <td>39</td>
+        <td class="bs-checkbox"><input type="checkbox"></td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>Chang</td>
+        <td>$19.00</td>
+        <td>24 - 12 oz bottles</td>
+        <td>17</td>
+        <td class="bs-checkbox"><input type="checkbox"></td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>Aniseed Syrup</td>
+        <td>$10.00</td>
+        <td>12 - 550 ml bottles</td>
+        <td>13</td>
+        <td class="bs-checkbox"><input type="checkbox"></td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td>Chef Anton's Cajun Seasoning</td>
+        <td>$22.00</td>
+        <td>48 - 6 oz jars</td>
+        <td>53</td>
+        <td class="bs-checkbox"><input type="checkbox"></td>
+      </tr>
+      <tr>
+        <td>5</td>
+        <td>Chef Anton's Gumbo Mix</td>
+        <td>$21.35</td>
+        <td>36 boxes</td>
+        <td>0</td>
+        <td class="bs-checkbox"><input type="checkbox" checked="checked" disabled></input></td>
+      </tr>
+      <tr>
+        <td>6</td>
+        <td>Grandma's Boysenberry Spread</td>
+        <td>$25.00</td>
+        <td>12 - 18 oz jars</td>
+        <td>120</td>
+        <td class="bs-checkbox"><input type="checkbox"></td>
+      </tr>
+      <tr>
+        <td>7</td>
+        <td>Uncle Bob's Organic Dried Pears</td>
+        <td>$30.00</td>
+        <td>12 - 1 lb. pkgs.</td>
+        <td>15</td>
+        <td class="bs-checkbox"><input type="checkbox"></td>
+      </tr>
+      <tr>
+        <td>8</td>
+        <td>Northwoods Cranberry Sauce</td>
+        <td>$40.00</td>
+        <td>12 - 12 oz jars</td>
+        <td>6</td>
+        <td class="bs-checkbox"><input type="checkbox"></td>
+      </tr>
+      <tr>
+        <td>9</td>
+        <td>Mishi Kobe Niku</td>
+        <td>$97.00</td>
+        <td>18 - 500 g pkgs.</td>
+        <td>29</td>
+        <td class="bs-checkbox"><input type="checkbox" checked="checked" disabled></input></td>
+      </tr>
+      <tr>
+        <td>10</td>
+        <td>Ikura</td>
+        <td>$31.00</td>
+        <td>12 - 200 ml jars</td>
+        <td>31</td>
+        <td class="bs-checkbox"><input type="checkbox"></td>
+      </tr>
+    </tbody>
+  </table>
+  </div>
+
+  <div class="container">
+    <ul class="pagination"><li><a href="#">Previous</a></li>
+      <li class="active"><a href="#">1</a></li>
+      <li><a href="#">2</a></li>
+      <li><a href="#">3</a></li>
+      <li><a href="#">4</a></li>
+      <li><a href="#">5</a></li>
+      <li><a href="#">6</a></li>
+      <li><a href="#">7</a></li>
+      <li><a href="#">8</a></li>
+      <li><a href="#">9</a></li>
+      <li><a href="#">10</a></li>
+      <li><a href="#">..</a></li>
+      <li><a href="#">Next</a></li>
+    </ul>
+  </div>
+
+</div>
+
+</body>
+</html>
